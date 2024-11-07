@@ -31,7 +31,7 @@ class Project(models.Model):
 
         # temporary solution, because the form currently only allows integer amounts
         total_expense_amount = int(total_expense_amount)
-        return self.budget + total_expense_amount
+        return self.budget - total_expense_amount
 
 
     @property
